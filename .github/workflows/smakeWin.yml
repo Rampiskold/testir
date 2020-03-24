@@ -18,4 +18,6 @@ jobs:
     - name: build
       run: cmake --build build
     - name: test
-      run: cd build && ctest -D Experimental Build
+      run: cd build && ctest -D ExperimentalTest
+    - name: push
+      run: cd build && ctest -D ExperimentalSubmit
